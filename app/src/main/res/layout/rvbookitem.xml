@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvbookitem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="40dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:id="@+id/parentrl"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/cvrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_launcher"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/bookname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:layout_margin="5dp"
+                android:layout_marginTop="10dp"
+                android:text="name of book"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/downarrow"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/img"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_downarrow_foreground"
+                android:contentDescription="TODO" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/exprl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:layout_below="@+id/cvrl">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/auth"
+    android:text="Author :"
+    android:textStyle="bold"
+    android:textSize="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/author"
+                android:text="this is my house bthc"
+                android:layout_below="@+id/auth"
+              android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/page"
+                android:text="Pages :"
+                android:layout_below="@+id/author"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pages"
+                android:layout_below="@+id/page"
+                android:textSize="15dp"
+                android:text="is it your house "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descrip"
+                android:layout_below="@+id/pages"
+                android:text="Description :"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:layout_below="@+id/descrip"
+                android:textSize="15dp"
+                android:text="he you wathu doin thair"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/btnDelete"
+           android:layout_below="@+id/description"
+           android:text="Delete"
+           android:layout_toStartOf="@+id/uparrow"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:id="@+id/uparrow"
+                android:src="@drawable/ic_uparrow_foreground"
+                android:layout_below="@+id/description"
+              android:layout_alignParentEnd="true" />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
